@@ -1,0 +1,21 @@
+#use Asterisk::AGI;
+sub demo {
+    my $self     = shift;
+    my $AGI      = $self->{server}{agi};           #AGI object
+    $AGI->noop('this only demo!');
+    $AGI->noop($AGI->get_agiaccountcode());
+    #$AGI->get_agicallerid();
+    #$AGI->get_agicalleridname();
+    #$AGI->get_agicallingani2();
+    #$AGI->get_agicallingpres();
+    #$AGI->get_agicallingtns();
+    #$AGI->get_agicallington();
+    #$AGI->get_agichannel();
+    #$AGI->get_agicontext();
+    #$AGI->get_agidnid();
+    #$AGI->get_agirequest();
+    foreach(0..5){
+        $AGI->say_digits($_);
+        sleep 1;
+    }
+}

@@ -1,0 +1,3 @@
+AGI.say_digits(1);
+AGI.noop('this only demo!');
+AGI.say_digits(2);
