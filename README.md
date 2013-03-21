@@ -2,7 +2,7 @@ agiengine是什么？
 
 	agiengine是为Asterisk提供远程AGI处理的服务端.
 
-agiengine的特性
+agiengine的特性:
 
 	强健的稳定性和性能于一体
 	提供方便的数据库操作接口
