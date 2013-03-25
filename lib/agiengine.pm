@@ -41,7 +41,7 @@ sub configure_hook
     $self->{server}->{cidr_deny}  = $aeconf->{agiengine}{cidr_deny};
     $self->{server}->{log_level}  = $aeconf->{agiengine}{log_level};
 
-    $self->{server}->{log_file}       = $aeconf->{agiengine}{log_file};
+    $self->{server}->{log_file}       = $aeconf->{agiengine}{log_file} || undef;
     $self->{server}->{pid_file}       = "$path/pid/agiengine.pid";
     $self->{server}->{dbautoconn}     = $aeconf->{database}{autoconn};
     $self->{server}->{check_for_dead} = 16;
