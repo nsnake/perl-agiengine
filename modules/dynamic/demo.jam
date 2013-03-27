@@ -1,3 +1,7 @@
-AGI.say_digits(1);
-AGI.noop('this only demo!');
-AGI.say_digits(2);
+
+function demo(){
+$AGI.noop('this a js demo!');
+$AGI.say_digits(1);
+data = $DBH.db_row_hashref("SELECT deviceproto,devicestring,accountcode FROM extension WHERE devicenumber = '8001'" );
+$AGI.noop(data.deviceproto); ;
+}
